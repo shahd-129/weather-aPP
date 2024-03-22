@@ -22,7 +22,7 @@ let submit = document.getElementById("submit")
 
 
 async function getWeatherData(cityName) {
-	let data = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=cfdfd9081ab544d5b4f205839241701&q=${cityName}`)
+	let data = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=cfdfd9081ab544d5b4f205839241701&q=${cityName}`)
 	let weatherData = await data.json()
 	// console.log(weatherData.forecast.forecastday[0].date);
 	return weatherData
